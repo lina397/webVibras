@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Catálogo de Productos</title>
+
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="inicio.html" class="logo"><img src="logo/logo.jpg"></a>
+        <h1>°•°•VIBRAS°•°•</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="quienes somos .html">Quiénes Somos</a></li>
+                <li><a href="producto.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Catálogo de Productos</h1>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="imagen/imagen1.jpg" alt="Producto 1">
+                <div class="producto-info">
+                    <h2>Producto 1</h2>
+                    <p>rico pastel de tres leches con relleno de frambuesa  </p>
+                    <p class="precio">$250.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="imagen/imagen2.jpg" alt="Producto 2">
+                <div class="producto-info">
+                    <h2>Producto 2</h2>
+                    <p>pastel de tres leches con un rico relleño fresa  </p>
+                    <p class="precio">$250.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="imagen/imagen3.jpg" alt="Producto 3">
+                <div class="producto-info">
+                    <h2>Producto 3</h2>
+                    <p>pastel de tres leches con relleño de vainolla con tamaño de 1kilo</p>
+                    <p class="precio">$300.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="imagen/imagen4.jpg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Producto 4</h2>
+                    <p>Mojaditos individuales con relleño de oreo  </p>
+                    <p class="precio">$25.00</p>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="imagen/imagen5.jpg" alt="Producto 5">
+                <div class="producto-info">
+                    <h2>Producto 5</h2>
+                    <p>Riquisima carlota de durazno tamaño de 1/4 </p>
+                    <p class="precio">$300.00</p>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="imagen/imagen6.jpg" alt="Producto 6">
+                <div class="producto-info">
+                    <h2>Producto 6</h2>
+                    <p>pastel de tres leches delocioso con relleño de chocolate tamaño de 1/4 </p>
+                    <p class="precio">$150.00</p>
+                </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="imagen/imagen 7.jpg" alt="Producto 7">
+                <div class="producto-info">
+                    <h2>Producto 7</h2>
+                    <p>rico flan napolitano con queso de tamaño de 1/4</p>
+                    <p class="precio">$250.00</p>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="imagen/imagen8.jpg" alt="Producto 8">
+                <div class="producto-info">
+                    <h2>Producto 8</h2>
+                    <p>Delicioso pastel de tres leches de 1/8 con relleño de sarsora</p>
+                    <p class="precio">$250.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: Vibras@gmail.com</p>
+    </footer>
+    
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

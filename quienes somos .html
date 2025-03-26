@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="producto.html" class="logo"><img src="logo/logo.jpg"></a>
+        <h1>VIBRAS</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="quienes somos .html">Quiénes Somos</a></li>
+                <li><a href="producto.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="logo/logo.jpg" width="50" alt="quienes_somos">
+            </div>
+            <div class="centro">
+                <h2>¿Quienes somos?</h2>
+                <p>Nuestra misión es brindar un servicio y productos personalizado más actuales.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>Visión</h2>
+            <p>Ser reconocida como la pastelería líder en nuestra región, conocida por nuestra pasión por la innovación, la calidad y la creatividad en la repostería.</p>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <div class="producto-info">
+                        <h2>Valores</h2>
+                        <img src="imagen/imagen2.jpg" alt="Producto 1">
+                        <p>1.	Calidad
+                            <br> 2.	Creatividad
+                            <br> 3.	Pasión
+                            <br> 4.	Compromiso
+                            <br> 5.	Atención al cliente
+                            <br> 6.	Higiene y seguridad
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <h2>Objetivos</h2>
+                     <p>1.	Comerciales:
+Aumentar las ventas y la rentabilidad del negocio.
+Posicionarse como una marca reconocida en el mercado.
+                         <br> 2.	Operativos:
+Mantener altos estándares de calidad en los productos.
+Implementar nuevas recetas y tendencias en pastelería.
+                         <br> 3.	Sociales y ambientales:
+Promover el consumo de productos artesanales y naturales.
+Reducir el desperdicio de alimentos y fomentar prácticas ecológicas.
+Apoyar a la comunidad con eventos, capacitaciones o donaciones.
+</p>
+                <div class="producto">
+                    <div class="producto-info">
+                        <h2>Misión</h2>
+                        <p>Nuestra misión es deleitar a nuestros clientes con productos de pastelería de alta calidad, frescos y artesanales, mientras proporcionamos un servicio excepcional y personalizado.</p>                   
+                        <video src="somos/nosotros somos.mp4" width = "200" height="350"controls>
+                      </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                 </div>
+        </section>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Vibras. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: vibras@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>

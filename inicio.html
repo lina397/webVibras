@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="producto.html" class="logo"><img src="logo/logo.jpg"></a>
+        <h1>VIBRAS</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="quienes somos .html">Quiénes Somos</a></li>
+                <li><a href="producto.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="logo/logo.jpg" width="50" alt="quienes_somos">
+            </div>
+            <div class="derecha">
+                <h2>Vibras</h2>
+                <p>Nuestra misión es brindarte un servicio y productos personalizado más actuales.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>PROMOCIONES</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="imagen/imagen10.jpg" alt="Producto 1">
+                    <div class="producto-info">
+                        <h2>Promoción Especial 1</h2>
+                        <p>pastel de tres leches: relleno de vainilla y decoracion con chocolate </p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="imagen/imagen11.jpg" alt="Producto 2">
+                    <div class="producto-info">
+                        <h2>Promoción Especial 2</h2>
+                        <p>Pastel de tres leches: con relleno de chocolate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Servicios y Precios</h2>
+                <ul>
+                    <li>Servicio uno: $150</li>
+                    <li>Servicio dos: $250</li>
+                    <li>Servicio tres: $350</li>
+                    <li>Servicio cuatro: desde $1200</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="logo/logo.jpg" width="50" alt="Servicio">
+            </div>
+        </section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Nuestras Marcas</h2>
+            <div class="brands">
+                <img src="marca/marca1.jpg" alt="Marca 1">
+                <img src="marca/marca2.jpg" alt="Marca 2">
+                <img src="marca/marca3.jpg" alt="Marca 3">
+                <img src="marca/marca4.jpg" alt="Marca 4">
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Vibras. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: vibras@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>
